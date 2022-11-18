@@ -1,0 +1,65 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+inhalt-start-seite {
+    display: grid;
+    grid-template-rows: 605px;
+    grid-template-columns: 5% 90% 5%;
+    padding-top: 30px;
+}
+
+Ueberschrift {
+    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
+    grid-row: 1/1;                              /*wo es oben anfängt und unten aufhört*/ 
+}
+
+nr-1 {
+    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
+    grid-row: 1/1;                              /*wo es oben anfängt und unten aufhört*/ 
+}
+
+nr-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+Ueberschrift h3, h1{
+    font-family: 'dancing script';
+    text-align: center;
+}
+
+Ueberschrift h1 {
+    font-size: 50px;
+    text-shadow: var(--Ueberschrift-color-shadow-Campo-Verde);
+}
+
+Ueberschrift h3 {
+    font-size: 25px;
+    text-shadow: var(--Ueberschrift-color-shadow-Wilkommen);
+}
+
+
+.Info-Text-Startseite {
+    padding: 100px;
+    margin-top: 50px;
+}
+
+.Info-Text-Startseite  {
+    font-family: Roboto;
+}
+
+.Bild-Startseite {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px 10px;
+    margin-top: 150px;
+}
+
+
+

@@ -1,0 +1,85 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#nava3 {
+    color: var(--active-color);
+}
+
+
+:root {
+    --Überschrift-background-color: rgba(205, 134, 63, 0.3);
+    --schrift-color-vorhebung:#177500;
+}
+
+anfahrt-inhalt {
+    display: grid;
+    grid-template-rows: 50px 650px;
+    grid-template-columns: 5% 40% 50% 5%;
+}
+
+ueberschrift-anfahrt {
+    grid-row: 1/2;          /*wo es oben anfängt und unten aufhört*/
+    grid-column: 2/4;       /*wo es links anfängt und rechts aufhört*/
+}
+
+info-anfahrt {
+    grid-row: 2/3;          /*wo es oben anfängt und unten aufhört*/
+    grid-column:2/3 ;       /*wo es links anfängt und rechts aufhört*/
+}
+
+.mapouter {
+    grid-row: 2/3;          /*wo es oben anfängt und unten aufhört*/
+    grid-column:3/4 ;       /*wo es links anfängt und rechts aufhört*/
+}
+
+ueberschrift-anfahrt {
+    display: grid;
+    justify-items: center;
+}
+
+ueberschrift-anfahrt h1 {
+    font-family: Courgette, sans-serif ;
+    text-shadow: var(--Ueberschrift-color);
+    font-size: 50px;
+    background: var(--Überschrift-background-color);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+
+info-anfahrt {
+    display: grid;
+    align-content: center;
+}
+
+info-anfahrt li {
+    list-style: none;
+    font-size: 25px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 700;
+}
+
+info-anfahrt abbr {
+    color: var(--schrift-color-vorhebung);
+}
+
+.mapouter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mapouter iframe {
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(112, 112, 112);
+    width: 700px;
+    height: 450px;
+    border: 0;
+}
+
+

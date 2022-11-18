@@ -1,0 +1,90 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.bottom {
+    background-color: var(--footer-background-color);
+}
+
+footer {
+    display: grid;
+    grid-template-rows: 10px 120px 10px;
+    grid-template-columns: 5% 90%5%;
+}
+
+inhalt-footer {
+    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
+    grid-row: 2/3;                              /*wo es oben anfängt und unten aufhört*/ 
+}
+
+footer {
+    padding-top: 30px;
+}
+
+.inhalt-bottom {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.inhalt-bottom h3 {
+    color: var(--footer-überschriften-color);
+}
+
+.inhalt-bottom a {
+    text-decoration: none;
+}
+
+.inhalt-bottom h5 {
+    color: var(--footer-link-h5-color);
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.inhalt-bottom h5:hover {
+    transition: var(--transition-link-h5-hover);
+    color: var(--footer-link-h5-hover-color);
+}
+
+
+
+
+copy {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+copy h5{
+    color: var(--copy-color);
+    padding-left: 20px;
+}
+
+copy h6 {
+    padding-top: 1px;
+    color: var(--copy-color);
+    padding-right: 20px;
+}
+
+copy a {
+    text-decoration: none;
+    color: var(--copy-color);
+    font-size: 12px;
+}
+
+copy a:hover {
+    color: var(--copy-color-a-hover);
+}
+
+.Teknikator {
+    color: var(--teknikator-name-color);
+}
+
+.Teknikator:hover {
+    color: var(--teknikator-name-color-hover);
+}
+

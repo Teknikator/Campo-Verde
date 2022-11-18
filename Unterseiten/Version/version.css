@@ -1,0 +1,93 @@
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+
+Versionen {
+    display: grid;
+    grid-template-rows: 50px 400px 605px 40px 7px;
+    grid-template-columns: 5% 90% 5%;
+}
+
+
+.circular-bar {
+    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
+    grid-row: 2/3;                              /*wo es oben anfängt und unten aufhört*/ 
+}
+
+
+.Versionen {
+    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
+    grid-row: 3/4;                              /*wo es oben anfängt und unten aufhört*/ 
+}
+
+.created {
+    grid-column: 2/4;                           /*wo es links anfängt und rechts aufhört*/
+    grid-row: 4/5;                              /*wo es oben anfängt und unten aufhört*/ 
+}
+
+Versionen {
+    background: url(/Campo-Verde/Bilder/matrix.jpg);
+}
+
+#copyVa {
+    color: var(--active-color);
+}
+
+.v-i {
+    margin: 15px;
+    background: aqua;
+    display: grid;
+    border-radius: 10px;
+}
+
+
+.Versionen a {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fff;
+    color: #000;
+}
+
+.Versionen h3 {
+    text-align: center;
+}
+
+
+.Versionen li {
+    padding-left: 40%;
+}
+
+.version-infos {
+    list-style: none;
+}
+
+.version-infos abbr {
+    font-weight: 800;
+    font-size: 20px;
+    font-family: Roboto;
+}
+
+.created {
+    text-align: end;
+    color: #fff;
+    font-size: 10px;
+}
+.created a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Auf und zuklappen des Textes*/
+.version-infos{
+    overflow: hidden;
+    transition: var(--transitiom-text-open);
+    max-height: 0px;
+}
+
+.sichtbar{
+    max-height: 350px;
+}
