@@ -17,7 +17,7 @@ div.appendChild(copy);
 copy.setAttribute('id', 'copyh5');
 
 copyh5 = document.getElementById('copyh5');
-copyh5.appendChild(document.createTextNode('© Copyright 2021 Campo Verde'));
+copyh5.appendChild(document.createTextNode('© Copyright 2023 Campo Verde'));
 
 
 
@@ -40,11 +40,11 @@ div = document.getElementById('copyV');
 copyV = document.createElement('a');
 div.appendChild(copyV);
 
-copyV.setAttribute('href', '/Campo-Verde/Unterseiten/Version/version.html')
+copyV.setAttribute('href', '/Unterseiten/Version/version.html')
 copyV.setAttribute('id', 'copyVa');
 
 copyVa = document.getElementById('copyVa');
-copyVa.appendChild(document.createTextNode('Version 0.2'));
+copyVa.appendChild(document.createTextNode('Version 0.4'));
 
 
 

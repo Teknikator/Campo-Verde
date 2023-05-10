@@ -10,8 +10,8 @@ circular-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(34, 34, 34, 0.99);
     border-radius: 30px;
+    width: 100%;
 }
 
 .container {
@@ -28,6 +28,8 @@ circular-bar {
     width: 220px;
     height: 250px;
     background: #2a2a2a;
+    box-shadow: 1px 1px 20px #fff;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -5,46 +5,88 @@
     margin-right: 0;
 }
 
+nav-leiste {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
 
 
 Versionen {
-    display: grid;
-    grid-template-rows: 50px 400px 605px 40px 7px;
-    grid-template-columns: 5% 90% 5%;
-}
-
-
-.circular-bar {
-    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
-    grid-row: 2/3;                              /*wo es oben anfängt und unten aufhört*/ 
-}
-
-
-.Versionen {
-    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
-    grid-row: 3/4;                              /*wo es oben anfängt und unten aufhört*/ 
-}
-
-.created {
-    grid-column: 2/4;                           /*wo es links anfängt und rechts aufhört*/
-    grid-row: 4/5;                              /*wo es oben anfängt und unten aufhört*/ 
+    background: url(/Bilder/matrix.jpg);
 }
 
 Versionen {
-    background: url(/Campo-Verde/Bilder/matrix.jpg);
-}
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+} 
 
 #copyVa {
     color: var(--active-color);
 }
 
 .v-i {
-    margin: 15px;
-    background: aqua;
     display: grid;
-    border-radius: 10px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
 
+.h3 {
+    grid-column: 3/4;
+}
+
+.version-infos {
+    grid-column: 2/5;
+}
+
+.lastupdate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lastupdateh3 {
+    background-color: rgb(53, 53, 53);
+    padding: 20px;
+    border-radius: 10px;
+    border: 4px solid rgb(255, 0, 0);
+    text-align: center;
+    margin: 50px;
+    width: 50%;
+}
+
+.lastupdateh3 p {
+    color: #fff;
+}
+
+
+.sichtbar {
+    background-color: aqua;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.h3 {
+    margin: 15px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 0);
+    box-shadow: 5px 5px 5px #fff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    font-weight: 900;
+    font-size: medium;
+}
 
 .Versionen a {
     text-decoration: none;
@@ -52,33 +94,32 @@ Versionen {
     color: #000;
 }
 
-.Versionen h3 {
+.Versionen a {
     text-align: center;
 }
 
 
 .Versionen li {
-    padding-left: 40%;
+    align-items: center;
 }
 
 .version-infos {
     list-style: none;
+    padding-left: 30%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.version-infos li {
+    color: #000000;
 }
 
 .version-infos abbr {
     font-weight: 800;
     font-size: 20px;
     font-family: Roboto;
-}
-
-.created {
-    text-align: end;
-    color: #fff;
-    font-size: 10px;
-}
-.created a {
-    color: #fff;
-    text-decoration: none;
+    color: #000000;
 }
 
 /*Auf und zuklappen des Textes*/
@@ -90,4 +131,50 @@ Versionen {
 
 .sichtbar{
     max-height: 350px;
+}
+
+
+
+@media (max-width: 1300px) {
+
+    .version-infos {
+        padding-left: 20%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .h3 {
+        grid-column: 2/5;
+    }
+
+    .version-infos {
+        grid-column: 1/6;
+    }
+
+    .version-infos {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .h3 {
+        grid-column: 1/5;
+    }
+
+    .h3 {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    circular-bar {
+        width: 80%;
+        padding: 30px;
+        margin: 30px;
+    }
+    .version-infos {
+        padding-left: 20px;
+    }
 }

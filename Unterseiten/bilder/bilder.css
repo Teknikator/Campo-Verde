@@ -1,0 +1,102 @@
+.inhalt-bilder {
+    display: flex;
+    flex-direction: column;
+}
+
+#linkBilderGalerie h5 {
+    color: var(--active-color);
+}
+
+ueberschrift {
+    padding: 40px;
+}
+
+.item {
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+button {
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    box-shadow: 1px 1px 10px #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+  
+button.active {
+    color: white;
+    background-color: blue;
+}
+  
+
+.alle-bilder {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+
+ueberschrift {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ueberschrift h1 {
+    font-family: 'dancing script';
+    text-shadow: var(--Ueberschrift-color-shadow-Campo-Verde);
+    font-size: 50px;
+}
+
+
+.bild img {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.bild img {
+    max-height: 200px;
+    max-width: 270px;
+    border-radius: 10px;
+}
+
+.highlighted {
+    width: 50%;
+}
+
+
+
+/*Bildschirmgrößen*/
+
+@media (max-width: 800px) {
+    .bild img {
+        max-height: 150px;
+        max-width: 200px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .alle-bilder {
+        justify-content: center;
+    }
+
+    .bild img {
+        max-width: 150px;
+    }
+}

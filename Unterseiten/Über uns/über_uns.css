@@ -6,9 +6,97 @@
 }
 
 
-
-
-
-#nava2 {
+#nava1 {
     color: var(--active-color);
+}
+
+info-ueber-uns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ueberschrift-ueber-uns {
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    color: #000;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 20px;
+    background-color: rgba(0, 255, 85, 0.719);
+}
+
+
+person {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+person p {
+    text-shadow: 1px 1px 5px #00cc3d5d;
+}
+
+.person1 {
+    background-color: rgb(135, 255, 255);
+}
+
+.person2 {
+    background-color: rgb(127, 255, 212);
+}
+
+.person3 {
+    background-color: rgb(127, 255, 176);
+}
+
+.person4 {
+    background-color: rgb(153, 255, 127);
+}
+
+
+.ueber-mich {
+    max-width: 350px;
+}
+
+infos-person {
+    padding: 50px;
+}
+
+bild-person img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+
+
+/*Verschiedene Bildschirmgrößen*/
+
+
+@media (max-width: 700px) {
+    bild-person img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    person {
+        padding: 0px;
+    }
+
+    bild-person img {
+        margin: 30px;
+    }
+
+    .person1, .person3 {
+        flex-direction: column-reverse;
+    }
+
+    .person2, .person4 {
+        flex-direction: column;
+    }
 }

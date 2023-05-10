@@ -1,42 +1,43 @@
-body {
-    background: var(--background-color);
-}
-
-
 :root {
-    --background-color: linear-gradient(140deg, rgb(255, 255, 255), rgb(175, 169, 169), rgb(110, 105, 105) );
+    --background-color: rgb(211, 211, 211);
     --Ueberschrift-color: 1px 1px 1px rgb(0, 255, 0);
 }
 
 
 /*Navigation*/
 :root {
-    --nav-background-color: #0d4100;
-    --active-color: rgb(0, 255, 0);
-    --nav-text-color: #ffffff;
-    --nav-text-hover-color: #CD853F;
-    --nav-text-hover-color-transition: 0.5s;
+    --nav-background-color: #e0aa36;
+    --active-color: rgb(0, 0, 255);
+    --nav-text-color: #1d7a00;
+    --nav-darker-background-color: #e29b00;
+    --dropdown-color: #af8428;
+    --navbar-height: 120px;
+    --nav-text-hover-color-transition: 1s;
 }
 
 
 
 /*Footer*/
 :root {
-    --footer-background-color: #0d4100;
-    --footer-überschriften-color: #ffffff;
-    --footer-link-h5-color: #b6b5b5;
-    --footer-link-h5-hover-color: #CD853F;
+    --footer-background-color: #e0aa36;
+    --footer-überschriften-color: #001141;
+    --footer-link-h5-color: #114700;
+    --footer-link-h5-hover-color: #000000;
     --transition-link-h5-hover: 0.5s;
-    --copy-color: #fff;
-    --copy-color-a-hover: #CD853F;
-    --teknikator-name-color: aquamarine;
-    --teknikator-name-color-hover: rgba(127, 255, 212, 0.7);
+    --copy-border-top: 3px solid #048000;
+    --copy-color: #114700;
+    --copy-color-a-hover: rgb(0, 255, 0);
+    --copy-shadow-a-hover: 0 0 0.2em #000000, 0 0 0.2em #000000, 0 0 0.2em #000000;
+    --teknikator-name-color: rgb(0, 132, 255);
+    --teknikator-name-shadow: 1px 1px 10px rgb(0, 0, 0);
+    --teknikator-name-color-hover: rgb(0, 0, 0);
 }
 
 
 /*Startseite*/
 :root {
     --Ueberschrift-color-shadow-Campo-Verde: 1px 1px 1px rgb(0, 255, 0);
+    --Ueberschrift-color-h1: #53950F;
     --Ueberschrift-color-shadow-Wilkommen: 1px 1px 1px #fff;
 }
 

@@ -8,35 +8,35 @@
 
 
 inhalt-start-seite {
-    display: grid;
-    grid-template-rows: 605px;
-    grid-template-columns: 5% 90% 5%;
-    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
 }
 
-Ueberschrift {
-    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
-    grid-row: 1/1;                              /*wo es oben anfängt und unten aufhört*/ 
-}
-
-nr-1 {
-    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
-    grid-row: 1/1;                              /*wo es oben anfängt und unten aufhört*/ 
-}
 
 nr-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+Ueberschrift{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 Ueberschrift h3, h1{
-    font-family: 'dancing script';
+    font-family: 'dancing script' , sans-serif;
     text-align: center;
 }
 
 Ueberschrift h1 {
     font-size: 50px;
     text-shadow: var(--Ueberschrift-color-shadow-Campo-Verde);
+    color: var(--Ueberschrift-color-h1);
 }
 
 Ueberschrift h3 {
@@ -46,20 +46,43 @@ Ueberschrift h3 {
 
 
 .Info-Text-Startseite {
-    padding: 100px;
-    margin-top: 50px;
+    padding: 50px;
+    width: 50%;
 }
 
 .Info-Text-Startseite  {
-    font-family: Roboto;
+    font-family: 'Alkatra' , sans-serif;
+    max-width: 600px;
+    color: #000;
+}
+
+.Info-Text-Startseite a {
+    font-family: 'dancing script', sans-serif;
+    font-size: 30px;
+    color: #53950F;
+    text-decoration: none;
 }
 
 .Bild-Startseite {
-    width: 450px;
-    height: 300px;
+    width: 50%;
+    height: 100%;
+    max-width: 550px;
     border-radius: 10px 10px;
-    margin-top: 150px;
 }
 
 
 
+@media(max-width: 900px) {
+    nr-1 {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .Info-Text-Startseite {
+        width: 100%;
+    }
+
+    .Bild-Startseite {
+        width: 90%;
+    }
+}

@@ -10,25 +10,17 @@
     background-color: var(--footer-background-color);
 }
 
-footer {
-    display: grid;
-    grid-template-rows: 10px 120px 10px;
-    grid-template-columns: 5% 90%5%;
-}
-
-inhalt-footer {
-    grid-column: 2/3;                           /*wo es links anfängt und rechts aufhört*/
-    grid-row: 2/3;                              /*wo es oben anfängt und unten aufhört*/ 
-}
 
 footer {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .inhalt-bottom {
     display: flex;
     align-items: stretch;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .inhalt-bottom h3 {
@@ -50,13 +42,24 @@ footer {
     color: var(--footer-link-h5-hover-color);
 }
 
+#kontaktfooter {
+    padding: 20px;
+}
 
+#Informationenfooter {
+    padding: 20px;
+}
+
+#datenschutzfooter {
+    padding: 20px;
+}
 
 
 copy {
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    border-top: var(--copy-border-top);
 }
 
 copy h5{
@@ -74,10 +77,13 @@ copy a {
     text-decoration: none;
     color: var(--copy-color);
     font-size: 12px;
+    transition: 1s;
 }
 
-copy a:hover {
+#copyV a:hover {
     color: var(--copy-color-a-hover);
+    text-shadow: var(--copy-shadow-a-hover);
+    transition: 0.5s;
 }
 
 .Teknikator {
@@ -86,5 +92,17 @@ copy a:hover {
 
 .Teknikator:hover {
     color: var(--teknikator-name-color-hover);
+    text-shadow: var(--teknikator-name-shadow);
 }
 
+
+.not-available h5 {
+    color: rgb(255, 0, 0);
+}
+
+
+@media(max-width: 550px) {
+    #copyV {
+        display: none;
+    }
+}

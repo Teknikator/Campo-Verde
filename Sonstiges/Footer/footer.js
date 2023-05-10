@@ -38,133 +38,6 @@ inhaltfooter.setAttribute('id', 'inhaltbottom');
 
 
 
-//Create Element Datenschutz-footer + id: datenschutzfooter
-
-div = document.getElementById('inhaltbottom');
-inhaltbottom = document.createElement('Datenschutz-footer');
-div.appendChild(inhaltbottom);
-
-inhaltbottom.setAttribute('id', 'datenschutzfooter');
-
-
-//Create Element h3 + id: überschrift1 + TextNode
-
-div = document.getElementById('datenschutzfooter');
-datenschutzfooter = document.createElement('h3');
-div.appendChild(datenschutzfooter);
-
-datenschutzfooter.setAttribute('id', 'überschrift1');
-
-ü1 = document.getElementById('überschrift1');
-ü1.appendChild(document.createTextNode('Datenschutz'));
-
-
-
-
-
-
-//Create Element Impressum-footer + id: impressum
-
-div = document.getElementById('datenschutzfooter');
-datenschutzfooter = document.createElement('Impressum-footer');
-div.appendChild(datenschutzfooter);
-
-datenschutzfooter.setAttribute('id', 'impressum');
-
-
-//Create Element a + href + id: linkimpressum
-
-div = document.getElementById('impressum');
-impressum = document.createElement('a');
-div.appendChild(impressum);
-
-impressum.setAttribute('href', '')
-impressum.setAttribute('id', 'linkimpressum');
-
-
-//Create Element h5 + id: linkimpressuminhalt + Text Node
-
-div = document.getElementById('linkimpressum');
-linkimpressum = document.createElement('h5');
-div.appendChild(linkimpressum);
-
-linkimpressum.setAttribute('id', 'linkimpressuminhalt');
-
-linkimpressuminhalt = document.getElementById('linkimpressuminhalt');
-linkimpressuminhalt.appendChild(document.createTextNode('Impressum'));
-
-
-
-
-
-
-//Create Element Datenschutz-footer + id: datenschutz
-
-div = document.getElementById('datenschutzfooter');
-datenschutzfooter = document.createElement('Datenschutz-footer');
-div.appendChild(datenschutzfooter);
-
-datenschutzfooter.setAttribute('id', 'datenschutz');
-
-
-//Create Element a + href + id: linkdatenschutz
-
-div = document.getElementById('datenschutz');
-datenschutz = document.createElement('a');
-div.appendChild(datenschutz);
-
-datenschutz.setAttribute('href', '')
-datenschutz.setAttribute('id', 'linkdatenschutz');
-
-
-//Create Element h5 + id: linkdatenschutzinhalt + Text Node
-
-div = document.getElementById('linkdatenschutz');
-linkdatenschutz = document.createElement('h5');
-div.appendChild(linkdatenschutz);
-
-linkdatenschutz.setAttribute('id', 'linkdatenschutzinhalt');
-
-linkdatenschutzinhalt = document.getElementById('linkdatenschutzinhalt');
-linkdatenschutzinhalt.appendChild(document.createTextNode('Datenschutz'));
-
-
-
-
-
-
-//Create Element AGB-footer + id: AGB
-
-div = document.getElementById('datenschutzfooter');
-datenschutzfooter = document.createElement('AGB-footer');
-div.appendChild(datenschutzfooter);
-
-datenschutzfooter.setAttribute('id', 'AGB');
-
-
-//Create Element a + href + id: linkAGB
-
-div = document.getElementById('AGB');
-AGB = document.createElement('a');
-div.appendChild(AGB);
-
-AGB.setAttribute('href', '')
-AGB.setAttribute('id', 'linkAGB');
-
-
-//Create Element h5 + id: linkAGBinhalt + Text Node
-
-div = document.getElementById('linkAGB');
-linkAGB = document.createElement('h5');
-div.appendChild(linkAGB);
-
-linkAGB.setAttribute('id', 'linkAGBinhalt');
-
-linkAGBinhalt = document.getElementById('linkAGBinhalt');
-linkAGBinhalt.appendChild(document.createTextNode('AGB'));
-
-
-
 
 
 
@@ -210,7 +83,7 @@ div = document.getElementById('EMail');
 EMail = document.createElement('a');
 div.appendChild(EMail);
 
-EMail.setAttribute('href', '')
+EMail.setAttribute('href', 'mailto:patrizel@web.de')
 EMail.setAttribute('id', 'linkEMail');
 
 
@@ -223,40 +96,40 @@ div.appendChild(linkEMail);
 linkEMail.setAttribute('id', 'linkEMailinhalt');
 
 linkEMailinhalt = document.getElementById('linkEMailinhalt');
-linkEMailinhalt.appendChild(document.createTextNode('..@gmail.com'));
+linkEMailinhalt.appendChild(document.createTextNode('patrizel@web.de'));
 
 
 
 
-//Create Element Standort-footer + id: Standort
+//Create Element tel-footer + id: tel
 
 div = document.getElementById('kontaktfooter');
-kontaktfooter = document.createElement('Standort-footer');
+kontaktfooter = document.createElement('tel-footer');
 div.appendChild(kontaktfooter);
 
-kontaktfooter.setAttribute('id', 'Standort');
+kontaktfooter.setAttribute('id', 'tel');
 
 
-//Create Element a + href + id: linkStandort
+//Create Element a + href + id: linktel
 
-div = document.getElementById('Standort');
-Standort = document.createElement('a');
-div.appendChild(Standort);
+div = document.getElementById('tel');
+tel = document.createElement('a');
+div.appendChild(tel);
 
-Standort.setAttribute('href', '')
-Standort.setAttribute('id', 'linkStandort');
+tel.setAttribute('href', 'tel:06226972288')
+tel.setAttribute('id', 'linktel');
 
 
-//Create Element h5 + id: linkE-Mailinhalt + Text Node
+//Create Element h5 + id: linktelinhalt + Text Node
 
-div = document.getElementById('linkStandort');
-linkStandort = document.createElement('h5');
-div.appendChild(linkStandort);
+div = document.getElementById('linktel');
+linktel = document.createElement('h5');
+div.appendChild(linktel);
 
-linkStandort.setAttribute('id', 'linkStandortinhalt');
+linktel.setAttribute('id', 'linktelinhalt');
 
-linkStandortinhalt = document.getElementById('linkStandortinhalt');
-linkStandortinhalt.appendChild(document.createTextNode('Anfahrt'));
+linktelinhalt = document.getElementById('linktelinhalt');
+linktelinhalt.appendChild(document.createTextNode('Tel: 06226 972288'));
 
 
 
@@ -282,7 +155,7 @@ div.appendChild(Informationenfooter);
 Informationenfooter.setAttribute('id', 'überschrift3');
 
 ü3 = document.getElementById('überschrift3');
-ü3.appendChild(document.createTextNode('Informationen'));
+ü3.appendChild(document.createTextNode('Galerie'));
 
 
 
@@ -304,18 +177,7 @@ div.appendChild(infohoffooter);
 
 infohoffooter.setAttribute('href', '')
 infohoffooter.setAttribute('id', 'linkinfohoffooter');
-
-
-//Create Element h5 + id: linkinfohoffooterinhalt + Text Node
-
-div = document.getElementById('linkinfohoffooter');
-linkinfohoffooter = document.createElement('h5');
-div.appendChild(linkinfohoffooter);
-
-linkinfohoffooter.setAttribute('id', 'linkinfohoffooterinhalt');
-
-linkinfohoffooterinhalt = document.getElementById('linkinfohoffooterinhalt');
-linkinfohoffooterinhalt.appendChild(document.createTextNode('Weitere Infos zum Hof'));
+infohoffooter.setAttribute('class', 'not-available');
 
 
 
@@ -335,7 +197,7 @@ div = document.getElementById('BilderGalerie');
 BilderGalerie = document.createElement('a');
 div.appendChild(BilderGalerie);
 
-BilderGalerie.setAttribute('href', '')
+BilderGalerie.setAttribute('href', '/Unterseiten/bilder/bilder.html')
 BilderGalerie.setAttribute('id', 'linkBilderGalerie');
 
 
@@ -347,6 +209,7 @@ div.appendChild(linkBilderGalerie);
 
 linkBilderGalerie.setAttribute('id', 'linkBilderGalerieinhalt');
 
+
 linkBilderGalerieinhalt = document.getElementById('linkBilderGalerieinhalt');
 linkBilderGalerieinhalt.appendChild(document.createTextNode('Bilder Galerie'));
 
@@ -357,123 +220,96 @@ linkBilderGalerieinhalt.appendChild(document.createTextNode('Bilder Galerie'));
 
 
 
-//Create Element Was-bieten-wir-an-footer + id: wasbietenwiranfooter
+
+//Create Element Datenschutz-footer + id: datenschutzfooter + href: /Unterseiten/Datenschutz/datenschutz.html
 
 div = document.getElementById('inhaltbottom');
-inhaltbottom = document.createElement('Was-bieten-wir-an-footer');
+inhaltbottom = document.createElement('Datenschutz-footer');
 div.appendChild(inhaltbottom);
 
-inhaltbottom.setAttribute('id', 'wasbietenwiranfooter');
+inhaltbottom.setAttribute('id', 'datenschutzfooter');
 
 
-//Create Element h3 + id: überschrift4 + TextNode
+//Create Element h3 + id: überschrift1 + TextNode
 
-div = document.getElementById('wasbietenwiranfooter');
-wasbietenwiranfooter = document.createElement('h3');
-div.appendChild(wasbietenwiranfooter);
+div = document.getElementById('datenschutzfooter');
+datenschutzfooter = document.createElement('h3');
+div.appendChild(datenschutzfooter);
 
-wasbietenwiranfooter.setAttribute('id', 'überschrift4');
+datenschutzfooter.setAttribute('id', 'überschrift1');
 
-ü4 = document.getElementById('überschrift4');
-ü4.appendChild(document.createTextNode('Was Bieten wir an?'));
-
-
-
-
-//Create Element Reitkurse-footer + id: reitkursefooter
-
-div = document.getElementById('wasbietenwiranfooter');
-wasbietenwiranfooter = document.createElement('Reitkurse-footer');
-div.appendChild(wasbietenwiranfooter);
-
-wasbietenwiranfooter.setAttribute('id', 'reitkursefooter');
-
-
-//Create Element a + href + id: linkreitkursefooter
-
-div = document.getElementById('reitkursefooter');
-reitkursefooter = document.createElement('a');
-div.appendChild(reitkursefooter);
-
-reitkursefooter.setAttribute('href', '')
-reitkursefooter.setAttribute('id', 'linkreitkursefooter');
-
-
-//Create Element h5 + id: linkreitkursefooterinhalt + Text Node
-
-div = document.getElementById('linkreitkursefooter');
-linkreitkursefooter = document.createElement('h5');
-div.appendChild(linkreitkursefooter);
-
-linkreitkursefooter.setAttribute('id', 'linkreitkursefooterinhalt');
-
-linkreitkursefooterinhalt = document.getElementById('linkreitkursefooterinhalt');
-linkreitkursefooterinhalt.appendChild(document.createTextNode('Reitkurse'));
+ü1 = document.getElementById('überschrift1');
+ü1.appendChild(document.createTextNode('Datenschutz'));
 
 
 
 
 
 
-//Create Element Reitkurse-footer + id: reitkursefooter
+//Create Element Impressum-footer + id: impressum
 
-div = document.getElementById('wasbietenwiranfooter');
-wasbietenwiranfooter = document.createElement('therapiereiten-footer');
-div.appendChild(wasbietenwiranfooter);
+div = document.getElementById('datenschutzfooter');
+datenschutzfooter = document.createElement('Impressum-footer');
+div.appendChild(datenschutzfooter);
 
-wasbietenwiranfooter.setAttribute('id', 'therapiereitenfooter');
-
-
-//Create Element a + href + id: linkreitkursefooter
-
-div = document.getElementById('therapiereitenfooter');
-therapiereitenfooter = document.createElement('a');
-div.appendChild(therapiereitenfooter);
-
-therapiereitenfooter.setAttribute('href', '')
-therapiereitenfooter.setAttribute('id', 'linktherapiereitenfooter');
+datenschutzfooter.setAttribute('id', 'impressum');
 
 
-//Create Element h5 + id: linkreitkursefooterinhalt + Text Node
+//Create Element a + href + id: linkimpressum
 
-div = document.getElementById('linktherapiereitenfooter');
-linktherapiereitenfooter = document.createElement('h5');
-div.appendChild(linktherapiereitenfooter);
+div = document.getElementById('impressum');
+impressum = document.createElement('a');
+div.appendChild(impressum);
 
-linktherapiereitenfooter.setAttribute('id', 'linktherapiereitenfooterinhalt');
-
-linktherapiereitenfooterinhalt = document.getElementById('linktherapiereitenfooterinhalt');
-linktherapiereitenfooterinhalt.appendChild(document.createTextNode('Therapiereiten'));
+impressum.setAttribute('href', '/Unterseiten/Impressum/impressum.html')
+impressum.setAttribute('id', 'linkimpressum');
 
 
+//Create Element h5 + id: linkimpressuminhalt + Text Node
+
+div = document.getElementById('linkimpressum');
+linkimpressum = document.createElement('h5');
+div.appendChild(linkimpressum);
+
+linkimpressum.setAttribute('id', 'linkimpressuminhalt');
+
+linkimpressuminhalt = document.getElementById('linkimpressuminhalt');
+linkimpressuminhalt.appendChild(document.createTextNode('Impressum'));
 
 
-//Create Element Staelle-footer + id: Staelle
-
-div = document.getElementById('wasbietenwiranfooter');
-wasbietenwiranfooter = document.createElement('Staelle-footer');
-div.appendChild(wasbietenwiranfooter);
-
-wasbietenwiranfooter.setAttribute('id', 'Staelle');
 
 
-//Create Element a + href + id: linkStaelle
-
-div = document.getElementById('Staelle');
-Staelle = document.createElement('a');
-div.appendChild(Staelle);
-
-Staelle.setAttribute('href', '')
-Staelle.setAttribute('id', 'linkStaelle');
 
 
-//Create Element h5 + id: linkE-Mailinhalt + Text Node
+//Create Element Datenschutz-footer + id: datenschutz
 
-div = document.getElementById('linkStaelle');
-linkStaelle = document.createElement('h5');
-div.appendChild(linkStaelle);
+div = document.getElementById('datenschutzfooter');
+datenschutzfooter = document.createElement('Datenschutz-footer');
+div.appendChild(datenschutzfooter);
 
-linkStaelle.setAttribute('id', 'linkStaelleinhalt');
+datenschutzfooter.setAttribute('id', 'datenschutz');
 
-linkStaelleinhalt = document.getElementById('linkStaelleinhalt');
-linkStaelleinhalt.appendChild(document.createTextNode('Pferde Parkplätze (Stallplätze)'));
+
+//Create Element a + href: /Unterseiten/Datenschutz/datenschutz.html + id: linkdatenschutz
+
+div = document.getElementById('datenschutz');
+datenschutz = document.createElement('a');
+div.appendChild(datenschutz);
+
+datenschutz.setAttribute('href', '/Unterseiten/Datenschutz/datenschutz.html')
+datenschutz.setAttribute('id', 'linkdatenschutz');
+
+
+//Create Element h5 + id: linkdatenschutzinhalt + Text Node
+
+div = document.getElementById('linkdatenschutz');
+linkdatenschutz = document.createElement('h5');
+div.appendChild(linkdatenschutz);
+
+linkdatenschutz.setAttribute('id', 'linkdatenschutzinhalt');
+
+linkdatenschutzinhalt = document.getElementById('linkdatenschutzinhalt');
+linkdatenschutzinhalt.appendChild(document.createTextNode('Datenschutz'));
+
+
+
