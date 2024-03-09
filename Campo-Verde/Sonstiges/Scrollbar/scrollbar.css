@@ -1,0 +1,40 @@
+
+::-webkit-scrollbar {
+    width: 0.9em;             /*größe*/
+    background: var(--background-scrollbar);
+}
+
+
+/*Hintergrund Scrollbar*/
+
+::-webkit-scrollbar-track {         
+    background: var(--background-scrollbar-track);
+    border-radius: 100vw;
+    margin-block: .3em;
+}
+
+
+/*Scroller Farbe*/
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-scrollbar-thumb);
+    border: .25em solid var(--background-scrollbar-track);
+    border-radius: 100vw;
+}
+
+
+/*Scroller Hover-Farbe*/
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--background-scrollbar-thumb-hover);
+}
+
+
+
+
+@supports (scrollbar-color: var(--background-scrollbar-thumb) var(--background-scrollbar-track)) {
+    *{
+        scrollbar-color: var(--background-scrollbar-thumb) var(--background-scrollbar-track);
+        scrollbar-width: thin;
+    }
+}
