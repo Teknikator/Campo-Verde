@@ -1,0 +1,68 @@
+.ueberschrift {
+    font-family: 'Patrick Hand';
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.impressum {
+    margin: 50px; /* Spezifischer Außenabstand für den Impressum-Container */
+}
+
+/* Stil für die Überschrift des Impressums. 
+   Beachtet die 'ueberschrift'-Klasse aus 'unterseiten.css' und ergänzt diese. */
+.impressum h1 {
+    text-align: center;
+    text-shadow: 1px 1px 10px #45ad00; /* Spezifischer Schatten für Impressum H1 */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.ueberschrift2 {
+    font-family: 'dancing script';
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #114700; /* Dunkles Grün für die Überschrift */
+    text-shadow: var(--Ueberschrift-color-shadow); /* Schatteneffekt */
+}
+
+/* Passt den margin der 'inhalt'-Klasse nur für diese Seite an, falls notwendig */
+.inhalt {
+    margin: 20px;
+}
+
+.strong {
+    font-family: 'dancing script';
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+    text-shadow: 1px 1px 1px aqua;
+}
+
+.strong2 {
+    font-family: 'dancing script';
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.infos {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.stronger {
+    font-size: 25px; /* Größere Schrift für 'stronger' */
+}
+
+.info {
+    padding: 10px;
+    padding-left: 35px; /* Einrückung für Informationsabsätze */
+}
+
+.haftung {
+    padding: 30px;
+    max-width: 1500px; /* Begrenzt die Breite des Haftungsausschluss-Bereichs */
+}

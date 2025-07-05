@@ -1,0 +1,194 @@
+body {
+    font-family: 'Arial', sans-serif; /* Modernere Schriftart */
+    line-height: 1.6;
+    color: var(--primary-text-color);
+    background-color: var(--light-grey-bg);
+}
+
+/* Navigations-Link (Beispiel, falls in ueber_uns.css definiert) */
+#nav1 {
+    color: var(--active-color); /* Akzentfarbe für den aktiven Nav-Link */
+}
+
+/* Allgemeine Überschrift für die Seite */
+info-ueber-uns {
+    display: block; /* Custom-Tags sollten display-Eigenschaft erhalten */
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(90deg, var(--medium-grey-gradient-start), var(--medium-grey-gradient-end));
+    color: var(--primary-text-color);
+    box-shadow: 0 4px 8px var(--shadow-light);
+    margin-bottom: 40px;
+}
+
+.ueberschrift-ueber-uns {
+    font-size: 2.5rem; /* Grössere Überschrift */
+    font-weight: 700;
+    font-style: normal; /* Entfernt den Italic-Stil, da er oft als weniger modern empfunden wird */
+    color: var(--primary-text-color); /* Überschriftfarbe */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px var(--shadow-light); /* Subtilerer Textschatten */
+}
+
+.ueberschrift-ueber-uns .campo-verde {
+    color: var(--accent-color-green); /* Akzentfarbe für den Hofnamen */
+    text-decoration: none;
+    font-weight: 900;
+    transition: color var(--transition-speed);
+}
+
+.ueberschrift-ueber-uns .campo-verde:hover {
+    color: var(--accent-color-blue);
+}
+
+/* Personen-Sektionen */
+person {
+    display: flex;
+    justify-content: center; /* Zentriert den Inhalt */
+    align-items: center;
+    padding: 60px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px var(--shadow-medium);
+    border-radius: 10px;
+    overflow: hidden; /* Wichtig für Animationen */
+    opacity: 0; /* Standardmässig ausgeblendet für JS-Animation */
+    transform: translateY(50px); /* Startposition für Slide-in */
+    transition: opacity var(--transition-speed), transform var(--transition-speed);
+}
+
+person.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.person1, .person3 {
+    background: linear-gradient(90deg, var(--medium-grey-gradient-start), var(--medium-grey-gradient-end));
+}
+
+.person2, .person4 {
+    background: linear-gradient(260deg, var(--medium-grey-gradient-start), var(--medium-grey-gradient-end));
+}
+
+infos-person {
+    padding: 30px; /* Etwas weniger Padding */
+    flex: 1; /* Nimmt verfügbaren Platz ein */
+    max-width: 500px; /* Begrenzt die Breite des Textblocks */
+}
+
+.name {
+    font-size: 1.8rem; /* Grösserer Name */
+    font-weight: 700;
+    color: var(--accent-color-blue); /* Akzentfarbe für Namen */
+    margin-bottom: 10px;
+    text-shadow: none; /* Textschatten entfernt, da es oft nicht minimalistisch wirkt */
+}
+
+.ueber-mich {
+    font-size: 1.1rem;
+    color: var(--secondary-text-color);
+    max-width: 450px; /* Etwas breiter für bessere Lesbarkeit */
+}
+
+bild-person img {
+    width: 250px; /* Etwas grössere Bilder */
+    height: 250px;
+    border-radius: 50%; /* Runde Bilder */
+    object-fit: cover; /* Bilder füllen den Kreis aus */
+    border: 5px solid var(--accent-color-green); /* Farbiger Rahmen um die Bilder */
+    box-shadow: 0 6px 12px var(--shadow-medium);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed), border-color var(--transition-speed); /* Animation für Hover */
+}
+
+bild-person img:hover {
+    transform: scale(1.05); /* Leichte Vergrösserung beim Hover */
+    box-shadow: 0 10px 20px var(--shadow-medium);
+    border-color: var(--accent-color-blue); /* Rahmenfarbe ändert sich beim Hover */
+}
+
+/* Mitarbeiter (Tiere) Sektion */
+info-mitarbeiter {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert den Inhalt */
+    padding: 60px 20px;
+    background-color: var(--light-grey-bg); /* Hellerer Hintergrund */
+    box-shadow: 0 -4px 8px var(--shadow-light); /* Schatten nach oben */
+    margin-top: 40px;
+}
+
+.unsere-mitarbeiter {
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--primary-text-color);
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px var(--shadow-light);
+}
+
+mitarbeiter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Abstand zwischen den Bildern */
+    max-width: 1200px; /* Begrenzt die Breite der Galerie */
+}
+
+mitarbeiter img {
+    max-height: 280px; /* Etwas kleinere Tierbilder */
+    max-width: 100%;
+    border-radius: 15px; /* Abgerundete Ecken */
+    object-fit: cover;
+    border: 3px solid var(--accent-color-orange); /* Farbiger Rahmen */
+    box-shadow: 0 4px 8px var(--shadow-light);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed), border-color var(--transition-speed);
+}
+
+mitarbeiter img:hover {
+    transform: scale(1.03); /* Leichte Vergrösserung beim Hover */
+    box-shadow: 0 8px 16px var(--shadow-medium);
+    border-color: var(--accent-color-green); /* Rahmenfarbe ändert sich beim Hover */
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 900px) {
+    person {
+        flex-direction: column; /* Stapelt Personen-Infos und Bild untereinander */
+        text-align: center;
+    }
+
+    .person2, .person4 {
+        flex-direction: column-reverse; /* Bild zuerst für abwechselndes Layout */
+    }
+
+    infos-person {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    bild-person {
+        margin-bottom: 20px; /* Abstand zwischen Bild und Text */
+    }
+
+    .ueberschrift-ueber-uns, .unsere-mitarbeiter {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .ueberschrift-ueber-uns, .unsere-mitarbeiter {
+        font-size: 1.8rem;
+    }
+
+    person {
+        padding: 30px 15px;
+    }
+
+    bild-person img {
+        width: 200px;
+        height: 200px;
+    }
+
+    mitarbeiter img {
+        max-height: 200px;
+    }
+}

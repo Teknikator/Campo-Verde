@@ -1,0 +1,64 @@
+:root {
+    --light-grey-bg: #f5f5f5; /* Sehr helles Grau für Hintergründe */
+    --background-color-2: #c2a159;
+    --background-color-3: #d9d9d9; /* Helleres Grau für Kontraste */
+    --Ueberschrift-color: #308815;
+    --Ueberschrift-color-shadow: 1px 1px 1px rgb(0, 255, 0);
+    --link-color: #1d7a00;
+    --accent-color-green: #4CAF50; /* Ein frisches Grün */
+    --accent-color-blue: #2196F3; /* Ein klares Blau */
+}
+
+
+/*Navigation*/
+:root {
+    --active-color: #1b4b1b;
+    --dropdown-color: #af8428;
+    --navbar-height: 120px;
+    --nav-text-hover-color-transition: 1s;
+}
+
+
+
+/*Footer*/
+:root {
+    --footer-überschriften-color: #001141;
+    --footer-link-h5-hover-color: #000000;
+    --transition-link-h5-hover: 0.5s;
+    --copy-border-top: 3px solid #048000;
+    --copy-color-a-hover: #000000;
+}
+
+
+/*Startseite*/
+:root {
+    --Ueberschrift-color-shadow-2: 1px 1px 1px #fff;
+}
+
+/* Über-uns, pensionsstall */
+:root {
+    --primary-text-color: #333; /* Dunklerer Text für bessere Lesbarkeit */
+    --secondary-text-color: #555;
+    --medium-grey-gradient-start: #e0e0e0; /* Hellgrau für Gradienten */
+    --medium-grey-gradient-end: #c0c0c0; /* Etwas dunkleres Grau für Gradienten */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+    --transition-speed: 0.4s ease-out;
+    --transition-speed-2: 0.5s ease-out; /* Übergangsgeschwindigkeit für Animationen */
+}
+
+
+/*Versionen*/
+:root {
+    --transitiom-text-open: 0.5s;
+}
+
+
+/*Scrollbar*/
+
+:root {
+    --background-scrollbar: #0d4100;
+    --background-scrollbar-track: #b4b4b4;
+    --background-scrollbar-thumb: #073a00ea;
+    --background-scrollbar-thumb-hover: #2d422d;
+}

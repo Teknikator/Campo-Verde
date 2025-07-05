@@ -1,0 +1,127 @@
+:root {
+    --Ueberschrift-background-color: rgba(205, 134, 63, 0.3); /* Korrigiert: Großschreibung für 'Ueberschrift' */
+    --schrift-color-vorhebung:#53950F;
+}
+
+.ueberschrift {
+    padding: 0;
+}
+
+ueberschrift-anfahrt {
+    padding-top: 20px;
+    display: grid;
+    justify-items: center;
+}
+
+ueberschrift-anfahrt h1 {
+    font-family: 'dancing script';
+    text-shadow: var(--Ueberschrift-color-shadow-Campo-Verde);
+    font-size: 80px;
+}
+
+info-anfahrt {
+    display: grid;
+    align-content: center;
+}
+
+info-anfahrt li {
+    list-style: none;
+    font-size: 25px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 700;
+}
+
+info-anfahrt abbr {
+    color: var(--schrift-color-vorhebung);
+}
+
+.strong {
+    font-weight: 700;
+    color: var(--schrift-color-vorhebung);
+}
+
+/* Bestehende und neue Styles für den .mapouter Container */
+.mapouter {
+    position: relative; /* Dies ist der entscheidende Teil! Ohne dies funktioniert die Positionierung des Links nicht. */
+    
+    /* Die Größe des Containers entspricht nun der gewünschten Kartengröße */
+    width: 700px; /* Ihre gewünschte Breite */
+    height: 450px; /* Ihre gewünschte Höhe */
+    
+    /* Ihre ursprünglichen Flexbox-Stile */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 30px;
+
+    /* Visuelle Stile für den Container */
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(112, 112, 112);
+    border: 1px solid black;
+    overflow: hidden; /* Wichtig, damit nichts über den Rand hinausragt */
+}
+
+/* Stil für den iFrame innerhalb des .mapouter-Containers */
+.mapouter iframe {
+    width: 100%; /* Füllt die Breite des .mapouter-Containers aus */
+    height: 100%; /* Füllt die Höhe des .mapouter-Containers aus */
+    border: none; /* Entfernt den individuellen iframe-Rand */
+    display: block;
+}
+
+/* Stil für den Overlay-Link - Dieser Part platziert den Text AUF der Karte */
+.map-overlay-link {
+    position: absolute; /* Platziert den Link absolut im .mapouter-Container */
+    top: 10px; /* Abstand vom unteren Rand */
+    right: 10px;
+    
+    /* Optische Gestaltung des Links */
+    background-color: rgba(0, 0, 0, 0.7); /* Halbtransparenter Hintergrund */
+    color: #fff; /* Weiße Schrift */
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9em;
+    white-space: nowrap;
+    z-index: 10; /* Stellt sicher, dass der Link über dem iframe liegt */
+    transition: background-color 0.3s ease;
+}
+
+.map-overlay-link:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Responsive Anpassungen (für den .mapouter Container) */
+@media(max-width: 800px) {
+    .mapouter {
+        width: 500px;
+        height: 350px;
+        justify-content: center;
+        padding-left: 0;
+        margin: 30px auto;
+    }
+}
+
+@media(max-width: 600px) {
+    .mapouter {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 480px) {
+    .mapouter {
+        width: 100%;
+        max-width: 480px;
+        height: 300px;
+        margin: 15px auto;
+    }
+}
+
+@media(max-width: 380px) {
+    .mapouter {
+        width: 200px;
+        height: 200px;
+    }
+}

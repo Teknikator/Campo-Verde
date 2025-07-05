@@ -1,0 +1,4 @@
+    <!--import aller Seiten-->
+    <?php include $base_path_php . 'web_data_import/cookie_banner.php'; ?>
+    <?php include $base_path_php . 'web_data_import/footer.php'; ?>
+    <script src="<?php echo $base_path; ?>js/cookie.js"></script>

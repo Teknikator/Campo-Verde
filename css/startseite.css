@@ -1,0 +1,87 @@
+inhalt-start-seite {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 40px;
+}
+
+
+nr-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+Ueberschrift{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+Ueberschrift h3, h1{
+    font-family: 'dancing script' , sans-serif;
+    text-align: center;
+}
+
+Ueberschrift h1 {
+    font-size: 80px;
+    text-shadow: var(--Ueberschrift-color-shadow);
+    color: var(--Ueberschrift-color);
+}
+
+Ueberschrift h3 {
+    font-size: 30px;
+    text-shadow: var(--Ueberschrift-color-shadow-2);
+}
+
+
+.Info-Text-Startseite {
+    padding: 50px;
+    width: 50%;
+}
+
+.Info-Text-Startseite  {
+    font-family: 'Patrick Hand';
+    max-width: 600px;
+    color: #000;
+}
+
+.Bild-Startseite {
+    width: 50%;
+    height: 100%;
+    max-width: 550px;
+    border-radius: 10px 10px;
+}
+
+
+
+@media(max-width: 1200px) {
+    nr-1 {
+        padding: 20px;
+    }
+
+    .Info-Text-Startseite {
+        padding: 25px;
+    }
+
+    .Bild-Startseite {
+        margin: 20px;
+    }
+}
+
+
+@media(max-width: 900px) {
+    nr-1 {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .Info-Text-Startseite {
+        width: 100%;
+    }
+
+    .Bild-Startseite {
+        width: 90%;
+    }
+}

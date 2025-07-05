@@ -1,0 +1,181 @@
+.inhalt {
+    font-family: 'Patrick Hand', sans-serif; /* Ein moderner Sans-Serif-Fallback */
+    line-height: 1.6;
+    color: var(--primary-text-color);
+    background-color: var(--light-grey-bg); /* Hellerer Hintergrund für die Seite */
+}
+
+/* Hauptinhalts-Container */
+.inhalt {
+    padding: 80px 40px; /* Mehr vertikales Padding für ein modernes Gefühl */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Inhalt horizontal zentrieren */
+    margin: 40px 40px; /* Zentriert den Inhalts-Div selbst und gibt Abstand oben/unten */
+    background-color: #fff; /* Weisser Hintergrund für den Inhaltsblock */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px var(--shadow-medium); /* Subtiler Schatten */
+    align-items: stretch; /* Inhalt füllt den verfügbaren Platz */
+
+    /* Animationseigenschaften für den gesamten Inhaltsblock */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity var(--transition-speed-2), transform var(--transition-speed-2);
+}
+
+/* Klasse für die Aktivierung der Animation durch JavaScript */
+.inhalt.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Seitenüberschrift */
+.ueberschrift {
+    font-family: 'Dancing Script', cursive; /* Beibehaltung der spezifischen Schriftart */
+    font-size: 4rem; /* Grössere, eindrucksvollere Überschrift */
+    font-weight: bold; /* Wenn 'Dancing Script' es unterstützt */
+    text-align: center;
+    padding-bottom: 50px;
+    color: var(--Ueberschrift-color);
+    text-shadow: var(--Ueberschrift-color-shadow); /* Subtilerer Textschatten */
+    margin-bottom: 30px; /* Abstand nach der Überschrift */
+}
+
+/* Layout für Bild und Text im Inhaltsbereich */
+.content {
+    display: flex;
+    flex-direction: row-reverse; /* Bild rechts, Text links */
+    align-items: center;
+    justify-content: space-around; /* Elemente im Flex-Container zentrieren */
+    gap: 40px; /* Abstand zwischen Bild und Text */
+    flex-wrap: wrap; /* Ermöglicht Umbruch auf kleineren Bildschirmen */
+}
+
+/* Bild-Styling */
+.bild img {
+    width: clamp(400px, 45vw, 700px); /* Responsive Bildbreite */
+    height: auto; /* Seitenverhältnis beibehalten */
+    border-radius: 15px; /* Weichere abgerundete Ecken */
+    box-shadow: 0 6px 12px var(--shadow-medium);
+    transition: transform var(--transition-speed-2), box-shadow var(--transition-speed-2);
+}
+
+.bild img:hover {
+    transform: scale(1.02); /* Leichter Zoom beim Hover */
+    box-shadow: 0 10px 20px var(--shadow-medium);
+}
+
+/* Textblock-Styling */
+.text {
+    flex: 1; /* Lässt den Text verfügbaren Platz einnehmen */
+    min-width: 200px; /* Mindestbreite für den Text vor dem Umbruch */
+    max-width: 800px; /* Maximale Breite für bessere Lesbarkeit */
+    padding: 30px; /* Konsistentes Padding */
+    background-color: var(--light-grey-bg); /* Subtiler Hintergrund für den Textblock */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px var(--shadow-light);
+}
+
+.text h4 {
+    font-size: 1.15rem; /* Leicht grösserer Text für bessere Lesbarkeit */
+    line-height: 1.8; /* Komfortablerer Zeilenabstand */
+    color: var(--primary-text-color);
+}
+
+.text h4 .campo-verde {
+    color: var(--accent-color-green); /* Konsistente Akzentfarbe */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color var(--transition-speed-2);
+}
+
+.text h4 .campo-verde:hover {
+    color: var(--accent-color-blue);
+}
+
+.text h4 a:not(.campo-verde) { /* Stil für andere Links im Text, z.B. Facebook */
+    color: var(--accent-color-blue);
+    text-decoration: underline;
+    transition: color var(--transition-speed-2);
+}
+
+.text h4 a:not(.campo-verde):hover {
+    color: var(--accent-color-orange);
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 1500px) {
+        .content {
+        flex-direction: column-reverse; /* Bild und Text vertikal stapeln */
+        gap: 30px;
+    }
+    .text {
+        padding: 40px;
+        margin: 40px;
+        max-width: 100%; /* Text volle Breite einnehmen lassen */
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        flex-direction: column-reverse; /* Bild und Text vertikal stapeln */
+        gap: 30px;
+    }
+
+    .bild {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bild img {
+        width: 80%; /* Bildbreite für kleinere Bildschirme anpassen */
+        margin: 0; /* Spezifische Ränder entfernen */
+    }
+
+    .ueberschrift {
+        font-size: 3.5rem; /* Überschriftengrösse anpassen */
+    }
+
+    .text {
+        padding: 20px;
+        margin: 5px;
+        max-width: 100%; /* Text volle Breite einnehmen lassen */
+    }
+}
+
+@media (max-width: 768px) {
+    .inhalt {
+        padding: 0px;
+        margin: 0;
+    }
+
+    .ueberschrift {
+        font-size: 2.8rem;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+    .content {
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+
+    .text h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ueberschrift {
+        font-size: 2.2rem;
+        padding-bottom: 20px;
+    }
+
+    .bild img {
+        width: 95%;
+    }
+
+    .text {
+        padding: 15px;
+    }
+}
