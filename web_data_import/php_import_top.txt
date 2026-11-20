@@ -1,7 +1,7 @@
 <?php
 // 1. Basispfad definieren
 $base_path = '/';
-$base_path_php = '/var/www/html/Campo-Verde/';
+$base_path_php = '/var/www/html/';
 
 // Dynamisches Jahr für das Copyright
 $current_year = date('Y');

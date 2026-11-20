@@ -26,7 +26,7 @@
 
         <section class="section-last-update">
             <div class="last-update-box">
-                <p>Letztes Update 05.07.2025</p>
+                <p>Letztes Update 17.11.2026</p>
             </div>
         </section>
 
@@ -34,26 +34,26 @@
             <h2 class="section-title">Technologie-Nutzung</h2>
             <div class="progress-cards-container">
                 <div class="progress-card">
-                    <div class="percent" style="--clr: #ff7043; --num:76;"> <div class="dot"></div>
+                    <div class="percent" style="--clr: #ff7043; --num:50;"> <div class="dot"></div>
                         <svg>
                             <circle cx="70" cy="70" r="70"></circle>
                             <circle cx="70" cy="70" r="70"></circle>
                         </svg>
                         <div class="number">
-                            <h2>76 <span>%</span></h2>
-                            <p>Html</p>
+                            <h2>50 <span>%</span></h2>
+                            <p>PHP</p>
                         </div>
                     </div>
                 </div>
                 <div class="progress-card">
-                    <div class="percent" style="--clr: #29b6f6; --num:16;"> <div class="dot"></div>
+                    <div class="percent" style="--clr: #29b6f6; --num:44;"> <div class="dot"></div>
                         <svg>
                             <circle cx="70" cy="70" r="70"></circle>
                             <circle cx="70" cy="70" r="70"></circle>
                         </svg>
                         <div class="number">
-                            <h2>16 <span>%</span></h2>
-                            <p>Css</p>
+                            <h2>44 <span>%</span></h2>
+                            <p>CSS</p>
                         </div>
                     </div>
                 </div>
@@ -64,8 +64,20 @@
                             <circle cx="70" cy="70" r="70"></circle>
                         </svg>
                         <div class="number">
-                            <h2>8 <span>%</span></h2>
+                            <h2>5 <span>%</span></h2>
                             <p>JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-card">
+                    <div class="percent" style="--clr:rgb(255, 0, 255); --num:1;"> <div class="dot"></div>
+                        <svg>
+                            <circle cx="70" cy="70" r="70"></circle>
+                            <circle cx="70" cy="70" r="70"></circle>
+                        </svg>
+                        <div class="number">
+                            <h2>1 <span>%</span></h2>
+                            <p>Html</p>
                         </div>
                     </div>
                 </div>
@@ -75,6 +87,28 @@
         <section class="section-version-history">
             <h2 class="section-title">Versions-Chronik</h2>
             <div class="version-list-container">
+                <article class="version-entry">
+                    <a href="#" data-nummer="12" class="version-header clickable-header">
+                        Datenschutz &amp; Sicherheit (Nov. 2026) <span class="toggle-icon">+</span>
+                    </a>
+                    <ul class="version-details" id="lang12">
+                        <li><abbr>+</abbr> Umzug auf eigene, verschlüsselte Server in Deutschland mit Ausfallsicherung über einen zweiten Server</li>
+                        <li><abbr>+</abbr> Schutz vor Angriffen durch CrowdSec (16.11.2026)</li>
+                        <li><abbr>+</abbr> Zusätzliche Sicherheitseinstellungen für den Browser, u. a. Content-Security-Policy (17.11.2026)</li>
+                        <li><abbr>+</abbr> Datenschutzerklärung aktualisiert: Hosting und CrowdSec ergänzt (16.11.2026)</li>
+                        <li><abbr>-</abbr> Cloudflare Turnstile und Cloudflare Web Analytics entfernt, es werden keine Besucherdaten mehr an Cloudflare übertragen (16.11.2026)</li>
+                        <li><abbr>-</abbr> Nicht mehr verfügbares externes Hintergrundbild entfernt (17.11.2026)</li>
+                        <li><abbr>+</abbr> Nutzung der Inhalte für KI-Training untersagt, Suchmaschinen weiterhin erlaubt (16.11.2026)</li>
+                    </ul>
+                </article>
+                <article class="version-entry">
+                    <a href="#" data-nummer="11" class="version-header clickable-header">
+                        Umzug Server <span class="toggle-icon">+</span>
+                    </a>
+                    <ul class="version-details" id="lang11">
+                        <li><abbr>+</abbr> Server umgezogen auf Performanteres System</li>
+                    </ul>
+                </article>
                 <article class="version-entry">
                     <a href="#" data-nummer="10" class="version-header clickable-header">
                         Version 1.0 (Juli. 2025) Final <span class="toggle-icon">+</span>

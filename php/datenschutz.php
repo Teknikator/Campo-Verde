@@ -184,7 +184,7 @@ include '../web_data_import/php_import_top.txt';
                 Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im
                 Impressum angegebenen Adresse an uns wenden.
                 <br><br>
-                <span class="strong2">Besondere Hinweise zur Löschung und Aufbewahrung von Daten:</span>
+                <span class="strong3">Besondere Hinweise zur Löschung und Aufbewahrung von Daten:</span>
                 <br>
                 <strong>Server-Protokolldaten:</strong> Wir weisen darauf hin, dass die automatische Erfassung von
                 IP-Adressen und
@@ -285,46 +285,35 @@ include '../web_data_import/php_import_top.txt';
 
             <h2 class="ueberschrift2">4. Externe Dienste und Sicherheit</h2>
 
-            <h3 class="strong">Cloudflare und Cloudflare Turnstile</h3>
+            <h3 class="strong">Hosting</h3>
             <p class="infos">
-                Wir nutzen Dienste der Cloudflare, Inc., 101 Townsend St., San Francisco, CA 94107, USA, um die
-                Sicherheit
-                und Performance unserer Website zu gewährleisten.
+                Diese Website wird auf eigenen Servern betrieben, die in Rechenzentren in Deutschland stehen.
+                Die Server werden von der netcup GmbH, Daimlerstraße 25, 76185 Karlsruhe, sowie von
+                Prepaid-Hoster, Inhaber Christopher Sakel, Im Eichengrund 10, 37170 Uslar, bereitgestellt.
+                Die Daten auf den Servern sind verschlüsselt gespeichert.
                 <br><br>
-                Cloudflare agiert als Content Delivery Network (CDN), indem es unsere Webinhalte zwischenspeichert und
-                über
-                ein globales Netzwerk von Servern ausliefert. Dies optimiert die Ladezeiten unserer Website.
-                Gleichzeitig
-                fungiert Cloudflare als Web Application Firewall (WAF) und schützt unsere Website vor bösartigen
-                Angriffen,
-                wie z.B. DDoS-Angriffen oder Bot-Angriffen.
+                Mit den Anbietern besteht ein Vertrag über die Auftragsverarbeitung gemäß Art. 28 DSGVO.
+            </p>
+
+            <h3 class="strong">Schutz vor Angriffen (CrowdSec)</h3>
+            <p class="infos">
+                Zum Schutz unserer Server vor Angriffen, z.B. automatisierter Suche nach Sicherheitslücken oder
+                Spam, setzen wir die Sicherheitssoftware CrowdSec ein. CrowdSec wertet die Server-Log-Dateien
+                (siehe Abschnitt 3) auf unseren eigenen Servern aus und sperrt IP-Adressen, von denen erkennbar
+                Angriffe ausgehen, für einen begrenzten Zeitraum.
                 <br><br>
-                Im Rahmen dieser Dienste, insbesondere auch durch den Einsatz von <strong>Cloudflare Turnstile</strong>,
-                einer
-                Alternative zu Googles reCAPTCHA, werden Daten zwischen Ihrem Browser und unserer Website über die
-                Server von
-                Cloudflare geleitet. Cloudflare Turnstile hilft uns dabei, Web-Angriffe bzw. "Bot"-Angriffe zu
-                verhindern,
-                indem bei Auffälligkeiten bestimmte Aufgaben oder Prüfungen im Hintergrund durchgeführt werden, ohne die
-                Nutzerfreundlichkeit zu beeinträchtigen. Hierbei werden Daten wie Ihre IP-Adresse, Informationen über
-                die von
-                Ihnen abgerufenen Inhalte, Browser-Informationen und Zeitstempel der Anfragen verarbeitet.
+                Wird ein Angriff erkannt, übermitteln wir die IP-Adresse des Angreifers, die Art des Angriffs und
+                den Zeitpunkt an die CrowdSec SAS, 20 rue Maurice Arnoux, 92120 Montrouge, Frankreich. Diese
+                Angaben fließen in eine gemeinsame Sperrliste ein, mit der sich die Nutzer von CrowdSec
+                gegenseitig vor Angreifern schützen. Daten von Besuchern, deren Zugriffe nicht als Angriff
+                erkannt werden, werden nicht übermittelt.
                 <br><br>
-                Die Verarbeitung dieser Daten erfolgt in unserem <strong>berechtigten Interesse</strong> gemäß Art. 6
-                Abs. 1
-                lit. f DSGVO an der Gewährleistung einer sicheren, stabilen und performanten Website sowie dem Schutz
-                vor
-                Missbrauch und Spam.
+                Die Verarbeitung erfolgt auf Grundlage unseres <strong>berechtigten Interesses</strong> gemäß
+                Art. 6 Abs. 1 lit. f DSGVO an der Sicherheit und Verfügbarkeit unserer Website.
                 <br><br>
-                Mit Cloudflare haben wir einen Auftragsverarbeitungsvertrag (AVV) gemäß Art. 28 DSGVO abgeschlossen, der
-                die
-                Einhaltung der Datenschutzbestimmungen sicherstellt. Durch die Zertifizierung von Cloudflare unter dem
-                <strong>EU-US Data Privacy Framework (DPF)</strong> ist zudem ein angemessenes Datenschutzniveau bei der
-                Übermittlung von Daten in die USA gewährleistet.
-                <br><br>
-                Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Cloudflare:
-                <a href="https://www.cloudflare.com/privacypolicy/"
-                    target="_blank">https://www.cloudflare.com/privacypolicy/</a>.
+                Mehr Informationen finden Sie in der Datenschutzerklärung von CrowdSec:
+                <a href="https://www.crowdsec.net/privacy-policy"
+                    target="_blank">https://www.crowdsec.net/privacy-policy</a>.
             </p>
 
             <h2 class="ueberschrift2">5. Plugins und Tools</h2>
@@ -362,6 +351,7 @@ include '../web_data_import/php_import_top.txt';
                 ermöglicht es Interessierten, die Funktionsweise der Webseite nachzuvollziehen und trägt zur
                 kontinuierlichen Verbesserung und Sicherheit bei. Sie finden das Repository unter: <a
                     href="https://github.com/Teknikator/Campo-Verde" target="_blank" rel="noopener noreferrer">https://github.com/Teknikator/Campo-Verde</a>.</p>
+            <p class="infos"><br>Stand: November 2026</p>
         </div>
     </div>
 

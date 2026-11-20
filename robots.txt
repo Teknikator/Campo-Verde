@@ -1,39 +1,19 @@
-# Standard-Suchmaschinen dürfen crawlen
+# Suchmaschinen und KI-Suche (z. B. ChatGPT-Suche, Perplexity): erlaubt
 User-agent: *
-Disallow:
+Allow: /
 
-# OpenAI GPTBot blockieren
+# KI-Training: gesperrt
 User-agent: GPTBot
-Disallow: /
-
-# OpenAI ChatGPT Plugins-Bot blockieren
-User-agent: ChatGPT-User
-Disallow: /
-
-# Google AI (Bard/Gemini) blockieren
-User-agent: Google-Extended
-Disallow: /
-
-# Claude (Anthropic)
+User-agent: ClaudeBot
 User-agent: anthropic-ai
-Disallow: /
-
-# CCBot (Common Crawl Bot, wird oft für KI-Training genutzt)
+User-agent: Google-Extended
+User-agent: Applebot-Extended
 User-agent: CCBot
+User-agent: meta-externalagent
+User-agent: Bytespider
+User-agent: cohere-training-data-crawler
 Disallow: /
 
-# Facebook AI Research
-User-agent: facebookexternalhit
-Disallow: /
-
-# Amazon Bot (Alexa AI trainiert auf Webdaten)
-User-agent: Amazonbot
-Disallow: /
-
-# Baidu (China, nutzt Daten für KI)
-User-agent: Baiduspider
-Disallow: /
-
-# Archive.org Wayback Machine blockieren (optional)
+# Archivierung (Wayback Machine): gesperrt
 User-agent: ia_archiver
 Disallow: /

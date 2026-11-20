@@ -6,9 +6,6 @@
     <meta name="description" content="Wilkommen beim Reiterhof campo verde in Eschelbronn wir bieten reiten lernen, therapeutisches reiten und pensionsställe an schau doch mal vorbei 😊">
     <meta name="keywords" content="reiterhof campo verde, reiterhof-campo-verde, reiterhof eschelbronn, reiterhof-campo-verde eschelbronn, reithof in Eschelbronn">
 
-    <!--Cloudflare Turnstile-->
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async="" defer=""></script>
-    <!--End Cloudflare Turnstile-->
 
 
     <!--Icons für die Webleiste bzw. Suchleiste-->

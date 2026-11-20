@@ -48,6 +48,14 @@
     padding: 10px;
 }
 
+.strong3 {
+    font-family: 'dancing script';
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+    padding-left: 0px;
+}
+
 .infos {
     font-size: 15px;
     padding-left: 15px;
